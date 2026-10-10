@@ -1,3 +1,7 @@
+
 from django.shortcuts import render
 
-# Create your views here.
+
+def home(request):
+    """Render the public-facing clinic homepage."""
+    return render(request, "dental_website/home.html")
